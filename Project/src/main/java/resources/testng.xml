@@ -40,7 +40,11 @@
       <class name="Academy.RegistrationPageTest3"/>
           </classes>
       </test>
-
+<test name="Validating title">
+         <classes>
+      <class name="Academy.validateTitle"/>
+       </classes>
+      </test>
       <test name="Validating Forgot Password feature">
          <classes>
       <class name="Academy.ForgotPswdPageTest"/>
