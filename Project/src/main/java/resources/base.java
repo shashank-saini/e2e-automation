@@ -20,7 +20,7 @@ public WebDriver initializeDriver() throws IOException
 {
 	
  prop= new Properties();
-FileInputStream fis=new FileInputStream("/var/jenkins_home/workspace/e2e-automation/Project/src/main");
+FileInputStream fis=new FileInputStream("/var/jenkins_home/workspace/e2e-automation/Project/src/main/java/resources/data.properties");
 
 prop.load(fis);
 String browserName=prop.getProperty("browser");
