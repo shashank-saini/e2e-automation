@@ -29,7 +29,9 @@ System.out.println(browserName);
 if(browserName.equals("chrome"))
 {
 	 System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome-stable");
-	driver= new ChromeDriver();
+	   ChromeOptions options = new ChromeOptions();
+                options.addArguments("headless");
+	driver= new ChromeDriver(options);
 		//execute in chrome driver
 	
 }
