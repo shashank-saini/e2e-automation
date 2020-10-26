@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Airbus.HomePage">
+      <class name="Academy.AppIntegrationTest">
         <methods>
-          <include name="basePageNavigation"/>
+          <include name="teardown"/>
+          <include name="LoginPageNavigation" invocation-numbers="0 1"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- Airbus.HomePage -->
+      </class> <!-- Academy.AppIntegrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

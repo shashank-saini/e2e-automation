@@ -28,6 +28,7 @@ public class ForgotPswdPageTest extends base{
 	
 	public void ForgotPswdPageNavigation(String email) throws Exception
 	{
+		driver.get(prop.getProperty("url"));
 	//Forgot password
 	ForgotPassword fp= new ForgotPassword(driver);
 	fp.getForgotPswd();

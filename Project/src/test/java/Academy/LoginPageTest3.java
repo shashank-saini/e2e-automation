@@ -38,7 +38,7 @@ public class LoginPageTest3 extends base {
 	
 	public void LoginPageNavigation(String Username,String email,String Password) throws Exception
 	{
-	
+		driver.get(prop.getProperty("url"));
 	
 	LoginPage lg = new LoginPage(driver);
 	lg.getLoginMain().click();

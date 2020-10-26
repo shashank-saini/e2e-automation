@@ -6,10 +6,9 @@ import org.openqa.selenium.WebElement;
 public class HomePg {
 	public WebDriver driver;
 	
-		By readMore = By.xpath("//*[@id=\"main\"]/div/div/div[1]/div/div[1]/div/div[1]/div[2]/div[2]/a");
-		
+		By readMore = By.xpath("//*[@id='main']/div/div/div[1]/div/div[1]/div/div[4]/div[2]/div[2]/a");
+		By phptravels = By.cssSelector("[href*='https://www.phptravels.com/?fbclid=IwAR0aCSIXZHjKFOv5GHBgzlv8Cz_erW9w0OiZIjjmbujQXQZwwBjpk8fsmhs']");
 		By whatsappLink = By.cssSelector("[href*='https://wa.me/923311442244?fbclid=IwAR3kaBdYNsjh2KS4G7KtLNMKWPAQI16Jelgl0CjcQw9Dl2E4zcTxvPGbHlY']");
-
         By title= By.cssSelector("[href*='https://web.whatsapp.com/']");
         
 		public HomePg(WebDriver driver) {
@@ -30,5 +29,9 @@ public class HomePg {
 		public WebElement getTitle()
 		{
 			return driver.findElement(title);
+		}
+		public WebElement getPhptravels()
+		{
+			return driver.findElement(phptravels);
 		}
 }

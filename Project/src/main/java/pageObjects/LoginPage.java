@@ -15,7 +15,6 @@ public class LoginPage {
 	By login=By.cssSelector("[type='submit']");
 	By forgotPassword = By.cssSelector("[href*='https://phptravels.com/blog/forgot-password']");
 	
-
 	public LoginPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		
@@ -39,7 +38,7 @@ public class LoginPage {
 	{
 		return driver.findElement(password);
 	}
-	
+
 	public WebElement getLogin()
 	{
 		return driver.findElement(login);
