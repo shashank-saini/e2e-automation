@@ -28,7 +28,7 @@ System.out.println(browserName);
 
 if(browserName.equals("chrome"))
 {
-	 System.setProperty("webdriver.chrome.driver", "C:/Users/shashank.saini/.eclipse/chromedriver.exe");
+	 System.setProperty("webdriver.chrome.driver", "/usr/bin");
 	driver= new ChromeDriver();
 		//execute in chrome driver
 	
