@@ -19,31 +19,28 @@ public class base {
 	public Properties prop;
 public WebDriver initializeDriver() throws IOException
 {
-	
-
-	driver = new HtmlUnitDriver();
-// prop.load(fis);
-// String browserName=prop.getProperty("browser");
-// System.out.println(browserName);
-
-// if(browserName.equals("HtmlUnit"))
-// {
-	
-// 		driver = new HtmlUnitDriver();
-	
-// }
-// else if (browserName.equals("firefox"))
-// {
-// // 	 driver= new FirefoxDriver();
-// 	//firefox code
-// }
-// else if (browserName.equals("IE"))
-// {
-// //	IE code
-// }
  prop= new Properties();
 FileInputStream fis=new FileInputStream("/var/jenkins_home/workspace/e2e-automation/Project/src/main/java/resources/data.properties");
+
+prop.load(fis);
+String browserName=prop.getProperty("browser");
+System.out.println(browserName);
+
+if(browserName.equals("HtmlUnit"))
+{
+	driver = new HtmlUnitDriver();
 	
+}
+else if (browserName.equals("firefox"))
+{
+//	 driver= new FirefoxDriver();
+	//firefox code
+}
+else if (browserName.equals("IE"))
+{
+//	IE code
+}
+
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 return driver;
 
